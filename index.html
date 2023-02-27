@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="text-center">
+  <h1 class="text-3xl font-bold text-center text-sky-900 mt-4">
+    Dictionary
+  </h1>
+  <p>Appropriate Pronunciation</p>
+
+  <div class="dicition-container text-center">
+    <input id="input-value" type="text" placeholder="Armina please type your word" class="input input-bordered input-success w-full max-w-xs ml-8 mt-8 "/>
+    <button onclick="handleSearch()" id="search-value" class="btn btn-primary ">Search</button>
+
+
+    <div id="audio-container" class="ml-44"> </div>
+
+  </div>
+
+  <section class="github  text-center">
+
+    <button onclick="loadGithubUsers()" id="github-btn" class="btn btn-secondary items-center mt-8 group-hover:text-sky"> Users Click </button>
+    
+    <div id="user-cotnainer" class="card card-compact  bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 ml-8 mt-8 gap-2 text-center">
+  
+    </div>
+  </section>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
